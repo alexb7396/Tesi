@@ -53,19 +53,6 @@ sample* queue::execute()
     if(input != NULL && counter >= numOfSamples)
     { 
         sstream << " ]"; 
-         Serial.print("Total heap:");
-   Serial.println( ESP.getHeapSize());
-    
-   Serial.print("Free heap:");
-   Serial.println(ESP.getFreeHeap());
-    
-   Serial.print("Total PSRAM:");
-   Serial.println(ESP.getPsramSize());
-    
-   Serial.print("Free PSRAM:");
-   Serial.println(ESP.getFreePsram());
-        Serial.println("errore qui");
-        Serial.println(sstream.str().c_str());
         sample* newSample = new sample(*input);
         newSample -> sampleString = sstream.str();
         counter = 0;

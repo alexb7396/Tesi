@@ -18,7 +18,6 @@ class queue : public operation{
   int numOfSamples;
   int counter;
   string myString;
-  stringstream sstream;
   // ssample* newSample;
   
     public:
